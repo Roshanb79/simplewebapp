@@ -43,7 +43,7 @@
                 <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-globe"></span> Logo</a>
             </div>
             <!-- Navbar links -->
-<H1><% out.println("Now is "+new java.util.Date()); %></H1>
+
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
@@ -66,7 +66,7 @@
     </nav>
 
 <div class="container-fluid">
-
+<H1 style="background-color:#DDFF55"><% out.println("Now is "+new java.util.Date()); %></H1>
 		<!-- Left Column -->
 		<div class="col-sm-3">
 
