@@ -67,84 +67,16 @@
 
 <div class="container-fluid">
 <H1 style="background-color:#DDFF55"><% out.println("Now is "+new java.util.Date()); %></H1>
-		<!-- Left Column -->
-		<div class="col-sm-3">
-
-			
-
-			<!-- Text Panel -->
-
-
-			<!-- Text Panel -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-						<span class="glyphicon glyphicon-bullhorn"></span> 
-						Active Predomination
-					</h3>
-				</div>
-				<div class="panel-body">
-					<p>Proactively envisioned multimedia based expertise and cross-media growth strategies.</p>
-					<div class="btn-group" role="group">
-						<button type="button" class="btn btn-default">Resource</button>
-						<button type="button" class="btn btn-default">Envision</button>
-						<button type="button" class="btn btn-default">Niche</button>
-					</div>
-				</div>
-			</div>	
-				
-		</div><!--/Left Column-->
-  
-  
-		<!-- Center Column -->
-		<div class="col-sm-6">
 		
-			<!-- Alert -->
-			<div class="alert alert-success alert-dismissible" role="alert">
-				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				Welcome to our simple java application
-			</div>		
-		
-			<!-- Articles -->
-			<c:forEach var="article" items="${articles}">
-			<div class="row">
-				<article class="col-xs-12">
-					<h2>${article.title }</h2>
-					<p>${article.body }</p>
-					<p><button class="btn btn-default">Read More</button></p>
-				</article>
-			</div>
-			<hr>
-			</c:forEach>
-		</div><!--/Center Column-->
-
-
-	  <!-- Right Column -->
-	  <div class="col-sm-3">
-
-			<!-- Form --> 
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-						<span class="glyphicon glyphicon-log-in"></span> 
-						Log In
-					</h3>
-				</div>
-				<div class="panel-body">
-					<form>
-						<div class="form-group">
-							<input type="text" class="form-control" id="uid" name="uid" placeholder="Username">
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password">
-						</div>
-						<button type="submit" class="btn btn-default">Log In</button>
-					</form>
-				</div>
-			</div>
-
-	  </div><!--/Right Column -->
-
+<% String username=request.getString("username");
+String password=request.getString("pass");
+if(username.equals("Roshan") && password.equals("pass")){
+out.println("Welcome Roshan");
+}
+else{
+out.println("Wrong Username and Pass");
+}
+%>
 	</div><!--/container-fluid-->
 	
 	<footer>
