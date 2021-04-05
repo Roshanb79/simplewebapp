@@ -68,7 +68,8 @@
 <div class="container-fluid">
 <H1 style="background-color:#DDFF55"><% out.println("Now is "+new java.util.Date()); %></H1>
 		
-<% try{
+<% if(request.getString("username")!=null){
+
 String username=request.getString("username");
 String password=request.getString("pass");
 if(username.equals("Roshan") && password.equals("pass")){
@@ -77,9 +78,6 @@ out.println("Welcome Roshan");
 else{
 out.println("Wrong Username and Pass");
 }
-}
-catch(Exception e){
-out.println("Welcome");
 }
 %>
 	</div><!--/container-fluid-->
