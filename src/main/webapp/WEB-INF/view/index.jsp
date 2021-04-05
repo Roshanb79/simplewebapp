@@ -47,7 +47,7 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="#">Home</a>
+                        <a href="${pageContext.request.contextPath}/">Home</a>
                     </li> 
                 </ul>
 
@@ -68,7 +68,7 @@
 <div class="container-fluid">
 <H1 style="background-color:#DDFF55"><% out.println("Now is "+new java.util.Date()); %></H1>
 		
-<% if(request.getString("username")!=null){
+<% /*if(request.getString("username")!=null){
 
 String username=request.getString("username");
 String password=request.getString("pass");
@@ -78,7 +78,7 @@ out.println("Welcome Roshan");
 else{
 out.println("Wrong Username and Pass");
 }
-}
+}*/
 %>
 	</div><!--/container-fluid-->
 	
