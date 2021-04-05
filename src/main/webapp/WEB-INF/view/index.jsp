@@ -5,7 +5,7 @@
    <body>
       <fieldset>
           <legend>Login</legend>
-          <form action="index.jsp" method="GET">
+          <form action="login.jsp" method="GET">
               <input type="text" name="username" placeholder="Username">
               <input type="password" name="pass" placeholder="Password">
                   <input type="submit" value="Login">
